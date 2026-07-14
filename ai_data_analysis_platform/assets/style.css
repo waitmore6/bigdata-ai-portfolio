@@ -1,0 +1,172 @@
+:root {
+    --ink: #25263d;
+    --muted: #73758a;
+    --purple: #6c55e8;
+    --purple-soft: #eeebff;
+    --panel: rgba(255, 255, 255, 0.82);
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 8% 0%, rgba(132, 106, 255, .16), transparent 28%),
+        radial-gradient(circle at 96% 15%, rgba(45, 212, 191, .12), transparent 24%),
+        #f6f7fb;
+}
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #202238 0%, #292b46 100%);
+}
+
+[data-testid="stSidebar"] * {
+    color: #f6f4ff;
+}
+
+[data-testid="stSidebar"] .stButton button {
+    border-color: rgba(255, 255, 255, .16);
+    background: rgba(255, 255, 255, .07);
+}
+
+.block-container {
+    max-width: 1500px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.hero-card {
+    padding: 68px 56px;
+    margin: 18px 0 28px;
+    border-radius: 30px;
+    color: #fff;
+    background:
+        linear-gradient(120deg, rgba(25, 27, 47, .96), rgba(76, 56, 166, .92)),
+        radial-gradient(circle at 85% 20%, #2dd4bf, transparent 32%);
+    box-shadow: 0 28px 70px rgba(51, 40, 111, .22);
+}
+
+.hero-card h1 {
+    max-width: 760px;
+    margin: 12px 0;
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.hero-card p {
+    max-width: 700px;
+    color: rgba(255, 255, 255, .75);
+    font-size: 18px;
+}
+
+.eyebrow {
+    color: #a99bff;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2.2px;
+}
+
+.feature-card {
+    min-height: 170px;
+    padding: 24px;
+    border: 1px solid rgba(94, 84, 165, .12);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, .72);
+    box-shadow: 0 14px 36px rgba(54, 50, 94, .08);
+}
+
+.feature-card span {
+    color: var(--purple);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.feature-card h3 {
+    margin: 14px 0 6px;
+    color: var(--ink);
+}
+
+.feature-card p {
+    color: var(--muted);
+}
+
+.page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 22px;
+}
+
+.page-title h1 {
+    margin: 4px 0;
+    color: var(--ink);
+    font-size: clamp(30px, 4vw, 48px);
+    letter-spacing: -1px;
+}
+
+.page-title p {
+    color: var(--muted);
+}
+
+.status-pill {
+    flex: 0 0 auto;
+    padding: 10px 15px;
+    border-radius: 999px;
+    color: #087f6f;
+    background: #dffaf4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+[data-testid="stMetric"] {
+    padding: 18px 20px;
+    border: 1px solid rgba(85, 77, 143, .10);
+    border-radius: 18px;
+    background: var(--panel);
+    box-shadow: 0 10px 28px rgba(48, 46, 78, .06);
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--ink);
+    font-weight: 800;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    margin: 22px 0 18px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .65);
+}
+
+.stTabs [aria-selected="true"] {
+    color: white !important;
+    background: var(--purple) !important;
+}
+
+div[data-testid="stDataFrame"],
+div[data-testid="stTable"] {
+    border: 1px solid rgba(85, 77, 143, .10);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.stButton button[kind="primary"] {
+    border: none;
+    background: linear-gradient(135deg, #7358ee, #5d46ce);
+    box-shadow: 0 10px 24px rgba(100, 75, 218, .24);
+}
+
+@media (max-width: 800px) {
+    .hero-card {
+        padding: 42px 26px;
+    }
+    .page-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
